@@ -185,7 +185,6 @@ run_sim <- function(iterations, n, seed = NULL) {
   return(results)
 }
 
-
 # Result ---------------------------------------------------
 
 system.time(
