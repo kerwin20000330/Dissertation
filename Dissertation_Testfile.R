@@ -34,7 +34,7 @@ ggdid(agg.ct)
 
 #3 Simulation
 system.time(
-  MonteSim <- run_sim(10,1000,4,4,seed = 1234) %>%
+  MonteSim <- run_sim(200,1000,4,4,seed = 1234) %>%
     mutate(truePar = 1)
 )
 
@@ -44,7 +44,7 @@ MonteSim %>%
 
 
 system.time(
-  MonteSim_sel <- run_sim_sel(10,5000,4,4,
+  MonteSim_sel <- run_sim_sel(200,5000,4,4,
                               seed = 1234,
                               pr = list(prPreU = 0.2,
                                         prPreL = 1,

@@ -6,7 +6,7 @@ rm(list=ls())
 
 generate_dat <- function(n,G,time.periods) {
   
-  gamG <- 0:G
+  gamG <- c(0,1:time.periods)/(2*time.periods)
   
   # allow transformation of X, here is just linear X
   X <- rnorm(n, mean = 0, sd = 1)
